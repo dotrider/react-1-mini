@@ -396,7 +396,7 @@ class App extends Component {
         <span>Name:</span>
         <input onChange={ ( e ) => this.updateName( e.target.value ) } value={ this.state.name } />
 
-        <button onClick={ () => this.addFriend() }>Add Friend</button>
+        <button onChange={ () => this.addFriend() }>Add Friend</button>
 
         { friends }
       </div>
